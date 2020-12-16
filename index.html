@@ -1,0 +1,209 @@
+
+<html>
+<head>
+    <script src="script/jquery.js"></script>
+    <script src="script/script.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  
+    <div class="contenedor">
+      <h1>Cotizador de Servidores</h1>
+        <div class="viewport-main">
+
+    <form>
+        
+        <div class="row">
+          <h3>Seleccionar las configuracion deseada</h3> 
+        <div class="col-75">Procesador</div>
+        <div class="col-25">
+        <select id="procesadores">
+            <option value="6">6 cores</option>
+            <option value="8">8 cores</option>
+            <option value="10">10 cores</option>
+            <option value="16">16 cores</option>
+            <option value="18">18 cores</option>
+          </select>
+        </div>
+      </div> 
+     
+         <div class="row">
+          <div class="col-75">Memoria</div>
+          <div class="col-25">
+          <select class="memos">
+            <option value="16">16Gb</option>
+            <option value="32">32Gb</option>
+            <option value="64">64Gb</option>
+            <option value="128">128Gb</option>
+            <option value="256">256Gb</option>
+            <option value="512">512Gb</option>
+            <option value="768">768Gb</option>
+          </select>
+        </div>
+      </div> 
+    
+      
+            
+            <div class="row">
+              <div class="col-75">Almacenamiento SAS o SATA?</div>
+              <div class="col-25">
+              <select class="velocidad">
+               <option value="1">Sas</option>
+               <option value="2">Sata</option>
+            </select>
+            
+            <br>
+          
+        </div>
+        <button id="botonVelocidad" type="button" onclick="velocidad()">Seleccionar</button> 
+            
+            <br>
+           
+           <label id="sas" hidden>
+             <br>
+             <br>
+           <h3>Cantidad de discos SAS</h3> 
+            <p id="480sas">480gb ssd</p>
+            <select id="cantSas1">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            </select>
+            <p id="960sas">960gb ssd</p>
+            <select id="cantSas2">
+              <option value="0">0</option>              
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            </select>
+            <p id="12sas">1.2tb</p>
+            <select id="cantSas3">
+              <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            </select>
+            <p id="24sas">2.4tb</p>
+            <select id="cantSas4">
+              <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            </select>
+            <br>
+            
+            <button id="botonSas" type="button" onclick="discosSas()">Seleccionar</button>
+            <br>
+            
+          </label> 
+          <label id="sata" hidden>
+            Cantidad de discos SATA
+            <p id="480sata">480gb ssd</p>
+            <select id="cantSata1">
+              <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            </select>
+            <p id="960sata">960gb ssd</p>
+            <select id="cantSata2">
+              <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            </select>
+            <p id="4sata">4tb</p>
+            <select id="cantSata4">
+              <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            </select>
+            <p id="8sata">8tb</p>
+            <select id="cantSata5">
+              <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            </select>
+            <br>
+            
+
+          <button type="button" id="botonSata" onclick="discosSata()">Seleccionar</button>
+          
+          
+        </label>
+
+        <div class="resultado" hidden>
+        <p id="nombreServidor"></p>
+        <p id="procesadorElegido"></p>
+          <p id="memoriaServidor"></p>
+          <p id="MemoriaServidor"></p> <p id="cantidadMemoriaServidor"></p> 
+              <p id="disco1"></p>
+              <p id="disco2"></p>
+              <p id="disco3"></p>
+              <p id="disco4"></p>
+              <p id="precio"></p>
+        </div>
+        <div id="cotizar" hidden>
+          <h3>Cotizar el Servidor indicado segun sus elecciones</h3> 
+        <button type="button" onclick="buscar()" >Cotizar</button>
+        </div>
+        
+        <button id="botonDolar" type="button" onclick="ConsultarAPI()" hidden>Calcular dolar actual</button>
+        <p id="JsonResponse"></p>
+    </form>
+    <br>
+  
+    
+
+</div>
+</div>
+    
+</body>
+</html>
