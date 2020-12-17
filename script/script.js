@@ -166,7 +166,7 @@ if (sasOsata == "1") {
 
 if (sasOsata == "2") {
 
-  $("#sata").fadeIn("slow");
+  
   $("#sas").hide();
 }
 }
@@ -203,7 +203,7 @@ function discosSas(){
     alert("La cantidad de discos no puede ser mayor a 8")
 
   }else{
-    $("#botonSas").fadeOut();
+    
     $("#cotizar").fadeIn("slow");
   }
 
@@ -239,7 +239,7 @@ function discosSata(){
     alert("La cantidad de discos no puede ser mayor a 8")
 
   }else{
-    $("#botonSata").fadeOut();
+    
     $("#cotizar").fadeIn("slow");
   }
 
@@ -248,7 +248,8 @@ function discosSata(){
 
 //empieza a buscar el servidor base que mejor se adapte a lo seleccionado
 function buscar() {
- 
+  $("#botonSata").fadeOut();
+  $("#botonSas").fadeOut();
 //eleccion de procesador segun los cores
   miServidor.Procesador = $("#procesadores").val();
 
