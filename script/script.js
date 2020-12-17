@@ -174,7 +174,7 @@ if (sasOsata == "2") {
 //chequea cantidad de discos y cuales se eligieron
 function discosSas(){
 
-  $("#botonSas").fadeOut();
+  
   miServidor.TipoDisco = "sas"
   sumarSata = false
   sumarSas = true
@@ -203,13 +203,14 @@ function discosSas(){
     alert("La cantidad de discos no puede ser mayor a 8")
 
   }else{
+    $("#botonSas").fadeOut();
     $("#cotizar").fadeIn("slow");
   }
 
 }
 
 function discosSata(){
-  $("#botonSata").fadeOut();
+  
   miServidor.TipoDisco = "sata"
   sumarSata = true
   sumarSas = false
@@ -238,6 +239,7 @@ function discosSata(){
     alert("La cantidad de discos no puede ser mayor a 8")
 
   }else{
+    $("#botonSata").fadeOut();
     $("#cotizar").fadeIn("slow");
   }
 
