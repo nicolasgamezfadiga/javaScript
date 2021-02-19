@@ -32,6 +32,7 @@ html {
     content: "";
     display: table;
     clear: both;
+    background-color: white;
   }
 
   @media screen and (max-width: 600px) {
@@ -45,9 +46,10 @@ html {
     display: flex;
     flex-flow: column;
     border-radius: 5px;
-   padding: 10px;
+   padding-bottom: 10%;
    justify-content: center;
    text-align: center;
+
   }
 
   button{
@@ -62,7 +64,8 @@ margin: 5%;
     background: rgb(72, 61, 133);
     margin-left: 15%;
     margin-right: 15%;
-    padding-bottom: 45%;
+    height: 100%;
+
     justify-content: center;
     display: flex;
     text-align: center;
