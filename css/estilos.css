@@ -46,10 +46,10 @@ html {
     display: flex;
     flex-flow: column;
     border-radius: 5px;
-   padding-bottom: 10%;
+
    justify-content: center;
    text-align: center;
-
+    padding: 5%;
   }
 
   button{
@@ -64,7 +64,7 @@ margin: 5%;
     background: rgb(72, 61, 133);
     margin-left: 15%;
     margin-right: 15%;
-    margin-bottom: 2%;
+    padding: 5%;
     justify-content: center;
     display: flex;
     text-align: center;
