@@ -49,8 +49,8 @@ html {
 
    justify-content: center;
    text-align: center;
-    padding: 5%;
-    padding-bottom: 5%;
+   
+   
   }
 
   button{
@@ -61,10 +61,12 @@ margin: 6%;
   .viewport-main {
     flex-flow: row;
     padding: 1%;
+    padding-top: 5%;
     color: aliceblue;
     background: rgb(72, 61, 133);
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 15%;
     padding: 5%;
     justify-content: center;
     display: flex;
